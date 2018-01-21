@@ -26,4 +26,25 @@ $(document).ready(function(){
   });
 
 
+  
+
+
+});
+
+$(function () {
+  $('.sample').textillate({
+    loop: true,
+    minDisplayTime: 2000,
+    autoStart: true,
+    inEffects: [],
+    outEffects: [ 'hinge' ],
+    // in animation settings
+    in:{
+            effect: 'fadeInLeftBig',
+            delayScale: 1.5,
+    },
+  });
+
+$('.lte').textillate({ in: { effect: 'bounceInDown' } });
+
 })
