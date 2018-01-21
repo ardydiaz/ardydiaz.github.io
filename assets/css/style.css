@@ -437,6 +437,11 @@ body{
 }
 .infor p{font-size: 12px;}
 .maps{padding: 3px 3px; background: #fff;}
+.sample{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 
