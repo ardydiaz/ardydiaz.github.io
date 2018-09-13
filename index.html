@@ -1,347 +1,2555 @@
 <!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Portfolio Ardy Diaz">
-    <meta name="keywords" content="Ardy Diaz Web Developer">
-    <meta name="author" content="Ardy Diaz">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<title>Ardy Diaz</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/compiled.css">
-	<link rel="stylesheet" href="assets/css/fakeloader.css">
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<div id="fakeLoader"></div>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-	<!--Main Navigation-->
-    <header>
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="img-responsive" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home </a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-               
-            </div>
-        </div>
-      </nav>
+    <head>     
+  
+        <!-- TITLE OF SITE --> 
+        <title>Ardy Diaz</title>
+  
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="description" content="Free Responsive Animated Portfolio Template" />
+        <meta name="keywords" content="portfolio, template, responsive, bootstrap" />
+        <meta name="developer" content="TemplateOcean">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="robots" content="noindex">
 
-    </header>
-   
-    <main>
+        <!-- FAV AND TOUCH ICONS   -->
+        <link rel="icon" type="image/png" href="ardy.ico" sizes="16x16" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-    <div class="view intro-1 intro hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/img/bg.png);">
-        <div class="full-bg-img">
-            <div class="container flex-center">
-                <div class="row mt-5">
-                    <div class="col-md-12 mb-3">
-                        <div class="text-center">
-                            <h1 class="sample" data-in-effect="rollIn">I specialize in helping small to medium-sized businesses grow using everything I know about making websites.</h1>
-                            <h1 class="display-2 mb-2 wow fadeInDown" data-wow-delay="0.3s" data-in-effect="rollIn"><span class="purple-text">I AM </span>ARDY <a class="indigo-text font-bold">DIAZ</a></h1>
-                            <h5 class="font-up mb-3 mt-1 font-bold wow fadeInDown lte" data-wow-delay="0.4s" data-in-effect="bounceInDown">Web developer</h5>
-                            <a class="btn btn-light-blue btn-lg wow fadeInDown" data-wow-delay="0.4s" href="#projects">portfolio</a>
-                            <a class="btn btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.4s" href="#skills">SKills</a>
+        <!-- GOOGLE FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+        <!-- font-family: 'Merriweather', serif; -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <!-- font-family: 'Open Sans', sans-serif; -->
+
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+        <!-- Image Slider -->
+        <link rel="stylesheet" href="css/plagin-css/owl.carousel.css">
+
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="icons/rik-icons/styles.css">
+
+        <!--   COUSTOM CSS link  -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!--[if lt IE 9]>
+            <script src="js/plagin-js/html5shiv.js"></script>
+            <script src="js/plagin-js/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body class="style-1">
+        
+        <!-- Start: Preloader Section
+        =================================== -->
+        <div id="main-preloader" class="main-preloader semi-dark-background">
+            <div class="container full-height">
+                <div class="row full-height">
+                    <div class="full-height col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+                        <div class="main-preloader-inner">
+
+                            <h1 class="preloader-percentage">
+                                <span class="preloader-percentage-text">0%</span> <!-- Show Percentage Number -->
+                                <!-- <span class="percentage">%</span> -->
+                            </h1>
+                            <div class="preloader-bar-outer">
+                                <div class="preloader-bar"></div> <!-- Percentage Precess Bar -->
+                            </div>
+
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- End: Preloader Section
+        =================================== -->
+
+
+
+        <!-- Start: Navbar  Area
+        ============================= -->
+        <nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js" id="main-navbar-top" >
+            <div class="container relative">
+                <div class="navbar-header">
+
+                    <!-- Menu Button show Mobile view -->
+                    <button type="button" class="nav-trigger nav-trigger-animate"  data-target="#js-navbar-menu">
+                        <span aria-hidden="true" class="icon"></span>
+                    </button>
+
+                    <!-- TEMPLATE LOGO LIGHT -->
+                    <a class="navbar-brand light-logo btn-scroll" href="#home-section"><img src="images/logo.png" alt="" class="img-responsive"></a>
+
+                </div>
+                
+                <!-- Main Menu List -->
+                <div class="navbar-collapse" id="js-navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" id="navbar-nav">
+                        <li><a class="btn-nav btn-scroll" href="#home-section">Home</a></li>
+                        <li><a class="btn-nav btn-scroll" href="#about-section">About</a></li>
+                        <li><a class="btn-nav btn-scroll" href="#portfolio-section">Portfolio</a></li>
+                        <li><a class="btn-nav btn-scroll" href="#contact-us-section">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Right Side Navigation Button -->
+                <div class="navbar-collapse-right hidden-xs " >
+                    <ul class="nav navbar-nav navbar-right btn-scroll">
+                        <li><a class="btn-nav" href="#contact-us-section">Get in Teach <i class="icon icon-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- End: Navbar Area
+        ============================= -->
+
+
+
+
+        <!--Start: 1st Section  
+            - HOME PAGE 
+        ====================================-->
+        <div class="section section-item home-section overflow hide-overlay overlay-color bg-image-1 wow" id="home-section">
+            <div class="inner-container ">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+                            <div class="home-content-outer text-center">
+                                
+                                <div class="overflow">
+                                    <div class="heading-outer left-right relative">
+                                        <div class="heading-outer top-bottom relative">
+                                            <div class="overflow p-t-40 p-l-40 p-r-40 p-b-40">
+                                                <div class="section-heading-outer">
+                                                    <h1 class="heading">Hello, Im <span class="color">Ardy Diaz</span>. Im a web developer.</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Next Section Arrow -->
+                        <div class="footer-button">
+                            <div class="overflow m-t-30">
+                                <div class="btn-form-outer btn-scroll">  <!-- Button Area -->
+                                    <a href="#services-section" class="btn"><i class="icon icon-arrow-carrot-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Home Page Buttom Navigation -->
+                        <nav class="navbar navbar-fixed-top main-navbar-top home-nav overflow">
+                            <div class="container relative home-nav-inner">
+                                <div class="navbar-header">
+
+                                    <!-- TEMPLATE LOGO LIGHT -->
+                                    <a class="navbar-brand light-logo" href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+
+                                </div>
+
+                                <div class="navbar-collapse-right" >
+                                    <ul class="nav navbar-nav navbar-right btn-scroll">
+                                        <li>
+                                            <a class="btn-nav btn-mask" href="#contact-us-section">Get in Teach <i class="icon icon-arrow-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </nav>
+                        <!-- End: Home Page Buttom Navigation -->
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--End: 1st Section  
+            - HOME PAGE 
+        ====================================-->
+
+
+        
+
+        <!--Start: 2nd Section  
+            - ABOUT PAGE 
+        ====================================-->
+        <div class="section section-item combine-section hide-overlay overflow semi-dark-background" id="about-section">
+            
+            <div class="inner-container services-section ">
+                 <div class="container">
+                    <div class="row">
+
+
+                        <!-- Start: Section Heading -->
+                        <div class="section-header col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div class="overflow">
+                                <div class="line-outer">
+                                    <div class="line wow"></div>
+                                </div>
+                            </div>
+                            <div class="overflow">
+                                <div class="section-heading-outer m-b-15">
+                                    <p class="sub-heading wow">ABOUT</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- End: Section Heading -->
+
+                        <div class="clearfix"></div>
+                        
+                        <!-- Start: Each Services Section -->
+                        <div class="each-services-outer overflow section-separator sp-bottom wow">
+
+                            <div class="icon-strategy wow">
+                                <div class="each-services col-sm-3">
+                                  <img src="images/fast.png" class="img-about">
+                                  <h5>Fast</h5>
+                                  <p>Fast load times and lag free interaction, my highest priority.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/mobile.png" class="img-about">
+                                    <h5>Responsive</h5>
+                                    <p>My layouts will work on any device, big or small.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/bulb.png" class="img-about">
+                                    <h5>Intuitive</h5>
+                                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="images/dynamic.png" class="img-about">
+                                    <h5>Dynamic</h5>
+                                    <p>Websites don't have to be static, I love making pages come to life.</p>
+                                </div>
+                                <div class="clearfix"></div><br>
+
+                                </div><!-- end stra -->
+
+                                
+                                 <div class="col-md-6">
+                                    <div class="bars-graph wow">
+                                     <div class="me-content">
+                                        <img src="images/me.png" class="img-me">
+                                        <h5>Who's this guy?</h5>
+                                        <p>I am a web developer, graduate of information technoloy and i have serious passion for backend, UI effects, animations and creating intuitive, dynamic user experiences. </p>
+                                    </div>
+                                   </div>
+                                </div>
+
+                                 <div class="col-md-6">
+                                    <div class="bars-graph wow">
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-1" role="progressbar" aria-valuenow="80"
+                                      aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                       <div class="tag bold flex">CSS</div>
+                                      </div>
+                                      <span>80%</span>
+                                    </div>
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-2" role="progressbar" aria-valuenow="90"
+                                      aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                       <div class="tag bold flex">HTML5</div>
+                                      </div>
+                                      <span>90%</span>
+                                    </div>
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-3" role="progressbar" aria-valuenow="80"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">Javascript</div>
+                                      </div>
+                                      <span>80%</span>
+                                    </div>
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-4" role="progressbar" aria-valuenow="90"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">Bootstrap</div>
+                                      </div>
+                                      <span>90%</span>
+                                    </div>
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-5" role="progressbar" aria-valuenow="70"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">PHP Codeigniter</div>
+                                      </div>
+                                      <span>70%</span>
+                                    </div>
+
+                                    <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-6" role="progressbar" aria-valuenow="45"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">API</div>
+                                      </div>
+                                      <span>45%</span>
+                                    </div>
+
+                                     <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-7" role="progressbar" aria-valuenow="75"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">Photoshop</div>
+                                      </div>
+                                      <span>75%</span>
+                                    </div>
+
+                                     <div class="progress wow">
+                                      <div class="progress-bar progress-bar-warning progress-8" role="progressbar" aria-valuenow="55"
+                                      aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                       <div class="tag bold flex">UI Design</div>
+                                      </div>
+                                      <span>55%</span>
+                                    </div>
+
+                                 </div>
+                             </div><!-- end bars -->
+
+                            </div> 
+                        <!-- End: Each Services Section -->
+                        
+
+                        <!-- Start: Each Services Part Full Detail -->
+                        <div class="services-full-view">
+                            
+                            <div class="services-details" id="services-1">
+                                <div class="services-inner relative overflow">
+
+                                    <!-- Features Image -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="features-image-outer">
+                                            <div class="image-outer">
+                                                <img src="images/services-1.jpg" alt="Services Image" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div> <!-- End: Features Image Area -->
+
+                                    <!-- Content Area -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="services-content-outer">
+
+                                            <div class="line-outer">
+                                                <div class="line"></div>
+                                            </div>
+
+                                            <div class="section-title-outer overflow">
+                                                <h3 class="section-title">Strategy.</h3>
+                                            </div>
+
+                                            <div class="overflow m-b-15">
+                                                <div class="title-outer">
+                                                    <h6 class="title relative">PERFECT STARATEGY FORYOUR BRAND</h6>
+                                                </div>
+                                            </div>
+
+                                            <div class="overflow">
+                                                <div class="pera-outer">
+                                                    <p>Chances are unless you are very lucky you will go thru many different relationships before you find your special someone. Finding your sole mate is like gambling. In poker and blackjack you may have to play dozens of hands until you get a winning hand, and it is the same with relationships.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="overflow">
+                                                <div class="pera-outer">
+
+                                                    <p>During your life you will probably meet some people who seem like they may be the one, or that they are closers, and I thought everything was great, until I started to seriously consider getting married.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="overflow m-t-15">
+                                                <div class="list-outer">
+                                                    <div class="list col-sm-6">
+                                                        <div class="row">
+                                                            <i class="icon icon-icon-ribbon"></i> Award-winning Strategist
+                                                        </div>
+                                                    </div>
+                                                    <div class="list col-sm-6">
+                                                        <div class="row">
+                                                            <i class="icon icon-icon-search-alt"></i> Extended Research
+                                                        </div>
+                                                    </div>
+                                                    <div class="list col-sm-6">
+                                                        <div class="row">
+                                                            <i class="icon icon-icon-document"></i> Bullet-prof Planning
+                                                        </div>
+                                                    </div>
+                                                    <div class="list col-sm-6">
+                                                        <div class="row">
+                                                            <i class="icon icon-icon-like-alt"></i> Trusted by Thousands
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="overflow">
+                                                <div class="btn-outer m-t-50">
+                                                    <a href="#8" class="btn btn-fill right-icon">GET IN TOUCH <i class="icon icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div> <!-- End: .services-content-outer -->
+                                    </div> <!-- End: Content Area -->
+                                    
+                                    <!-- Button Area -->
+                                    <div class="back-button-outer overflow">  
+                                        <a href="#" class="btn btn-services-back btn-mask"><i class="icon icon-arrow-carrot-left-alt2"></i></a>
+                                    </div>
+
+                                </div> <!-- End: .services-inner -->
+                            </div> <!-- End: .services-details -->
+
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .container -->
+            </div> <!-- End: . -->
+
+        </div>
+        <!--End: 2nd Section  
+            - ABOUT PAGE 
+        ====================================-->
 
    
 
-    <div class="skills" id="skills">
-    	<div class="container">
-    		<div class="titile">
-    			<h1>My SKills</h1>
-    		</div>
-    		<div class="row ">
-    			<div class="col-md-4 skills-md slideanim">
-    				 <img src="assets/img/skills/cssbg.png" class="img-responsive img-sk" alt="">
-    				<p>In many ways, front-end web design is all about managing rectangles, and the CSS box model provides a layout paradigm for HTML elements that you can use to structure a webpage.</p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/html.png" class="img-responsive img-sk" alt="">
-    				<p>It is a form of programming language that is used to make web pages on the internet viewable. So it can be said that it is because of HTML that web pages are interesting to look at, but the importance of HTML is often taken for granted.</p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/js.png" class="img-responsive img-sk" alt="">
-    				<p>JavaScript has emerged in web industry like a boom and if you look at the current web scenario there are no web technologies that are not using JavaScript. </p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/bs.png" class="img-responsive img-sk" alt="">
-    				<p>Mobile devices continue to grow in popularity year after year. The need to have a responsive website is becoming increasingly important.</p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/php.png" class="img-responsive img-sk" alt="">
-    				<p>PHP Programmer have dedicated team of professional PHP developers dedicatedly to satisfy our client with the requirement. We assure to provide PHP developers with effective solutions.</p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/ci.png" class="img-responsive img-sk" alt="">
-    				<p>CodeIgniter is another powerful web application development framework, built for php programmers to develop simple and large web applications.</p>
-    			</div>
-    			<div class="col-md-4 skills-md slideanim">
-    				<img src="assets/img/skills/api.png" class="img-responsive img-sk" alt="">
-    				<p>The only thing is that it is indispensable that the responses to the requests should always take place in the language used for the information exchange, normally XML or JSON. </p>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-   
-    <div class="projects" id="projects">
-    	 <div class="view intro-1 intro hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/img/project/project-bg.png);">
-    	 	 <div class="full-bg-img">
-    	<div class="container">
-    		<div class="title">
-    			<h1>Work Project</h1>
-    		</div>
-    		<ul class="caption-style-4">
-			<li class="slideanim">
-				<img src="assets/img/project/totokini_ico.png" class="img-responsive img-work" alt="totokini">
-				<div class="caption">
-					<a href="http://totokini.net/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Totokini</h1>
-						
-					</div>
-					</a>
-				</div>
-			</li>
-			<li  class="slideanim">
-				<img src="assets/img/project/sdsb.png" class="img-responsive img-work" alt="sdsb">
-				<div class="caption">
-					<a href="http://sdsbtogel.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>SDSBTOGEL</h1>
-					</div>
-				  </a>
-				</div>
-			</li>
-			<li  class="slideanim">
-				<img src="assets/img/project/jamtogel.png" class="img-responsive img-work" alt="jamtogel">
-				<div class="caption">
-					<a href="http://jamtogel.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>JAMTOGEL</h1>
-					</div>
-				   </a>
-				</div>
-			</li>
-			<li  class="slideanim">
-				<img src="assets/img/project/4dhoki.png" class="img-responsive img-work" alt="4dhoki">
-				<div class="caption">
-					<a href="http://www.kunciajaib.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>4DHOKI</h1>
-					</div>
-					</a>
-				</div>
-			</li>
-			<li  class="slideanim">
-				<img src="assets/img/project/togelkita.png" class="img-responsive img-work" alt="togelkita">
-				<div class="caption">
-					<a href="http://www.togelkita.org/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>TOGELKITA</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li  class="slideanim">
-				<img src="assets/img/project/cintatogel.png" class="img-responsive img-work" alt="cintatogel">
-				<div class="caption">
-					<a href="http://cintatogel.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>CINTATOGEL</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/mastertoto4d.png" class="img-responsive img-work" alt="cintatogel">
-				<div class="caption">
-					<a href="http://mastertoto4d.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>MASTERTOTO 4D</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/sogo4d.png" class="img-responsive img-work" alt="cintatogel">
-				<div class="caption">
-					<a href="http://sogo4d.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>SOGO4D</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/oriental4d.png" class="img-responsive img-work" alt="oriental4d">
-				<div class="caption">
-					<a href="http://oriental4d.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>ORIENTAL 4D</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/sdsblotto.png" class="img-responsive img-work" alt="sdsblotto">
-				<div class="caption">
-					<a href="http://sdsblotto88.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>SDSBLOTTO</h1>
-					</div>
-				  </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/tebakangka.png" class="img-responsive img-work" alt="tebakangka">
-				<div class="caption">
-					<a href="http://tebaktogel.com/" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>TEBAK-ANGKA</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-			<li class="slideanim">
-				<img src="assets/img/project/idrtoto.png" class="img-responsive img-work" alt="idrtoto">
-				<div class="caption">
-					<a href="http://idrtoto.org/login" target="_blank"">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Back office</h1>
-					</div>
-					 </a>
-				</div>
-			</li>
-		</ul>
 
-    	 </div>
-    	</div>
-       </div>
-    </div>
+        <!--Start: 3rd Section  
+            - Portfolio PAGE
+        ====================================-->
+        <div class=" section section-item dark-background" id="portfolio-section">
+            <div class="inner-container ">
+                 <div class="container">
+                    <div class="row section-separator">
+
+                        <div class="col-sm-12 overflow">
+                            <div class="row portfolio-container wow">
+                                <div class="portfolio-wrapper pagination-style-1 owl-carousel">
+
+                                    <!-- SLIDES -->
+
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/sip.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project One
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-sm-6 col-xs-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project One</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-sm-6 col-xs-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/sip-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/sdsb.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Two
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Two</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/sdsb-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/jam.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Three
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/jam-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
 
 
-    <div class="my-work">
-    	<div class="container">
-    		<div class="title">
-    			<h1> My Work </h1>
-    		</div>
-    		<div class="row slideanim">
-    			<div class="col-sm-6 header">
-    				<h2>Mpotech Digital System inc.</h2>
-
-    				<p>MPO TECH is one of the fastest growing Internet Marketing Companies based in the Philippines. A digital marketing for IT and tech companies. We build Websites,mobile apps and manages marketing to help I.T enterprises & communication service providers with demand generation and best practice websites.</p><br>
-    				<a href="http://mpo-tech.com/" class="btn btn-primary" target="_blank">Visit Website</a>
-    			</div>
-    			<div class="col-sm-6">
-    				<div class="work-img"><img src="assets/img/work/icon.png" class="img-responsive" alt="work"></div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-
-    <div class="contact" id="contact">
-    	<div class="titles">
-    			<h1> Contact </h1>
-    		</div>
-    	<div class="container">
-    		<div class="row">
-
-    			<div class="col-md-6">
-		    		<div class="card hovercard">
-		                <div class="cardheader">
-
-		                </div>
-		                <div class="avatar">
-		                    <img  src="assets/img/profile/icon.png" alt="profile">
-		                </div>
-		                <div class="info">
-		                    <div class="title">
-		                        <a target="_blank" href="">Ardy P. Diaz</a>
-		                    </div>
-		                    <div class="desc">Web Developer at <b>MPOTECH DIGITAL SYSTEM INC</b></div>
-
-		                    <div class="infor">
-		                    	<p><strong>Address:</strong>BLK-34 D Lot-1 PH-3 Bangay-ngay Caloocan City.</p>
-		                    	<p><strong>Contact #:</strong> 09164295239</p>
-		                    </div>
-		                </div>
-                   </div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="maps">
-    					<iframe width="100%" height="290" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Bangay%20ngay%20caloocan%20city&key=AIzaSyCf4JflEtX0KJzFNnOpSUTu-Qtus7cvBKo" allowfullscreen></iframe>
-    				</div>
-    				
-    			</div>
-
-
-    		</div>
-    	</div>
-    </div>
 
 
 
+
+
+
+
+
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/hoki.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Four
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/hoki-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+
+
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/kita.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Four
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/kita-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/cinta.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Six
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/cinta-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/toto.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Seven
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/toto-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                      
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/oriental.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Eight
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/oriental-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/lotto.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/lotto-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/tebak.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/tebak-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/klik.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/klik-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/18.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/18-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/88.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/88-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                      <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/goto.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/goto-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/609.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/609-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/88dewa.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/88dewa-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                     <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/macan.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/macan-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/master.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/master-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+                                    <div class="item ">
+                                        
+                                        <div class="porifolio-section overflow">
+
+                                            <div class="col-xs-10 col-xs-offset-1">
+                                                <div class="row">
+                                                    <div class="image text-center">
+                                                        <img src="images/comp/oke.png" alt="Features Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="each-portfolio-heading">
+                                                <div class="heading-text overflow wow">
+                                                    <div class="line"></div>
+                                                    <div class="overflow">
+                                                        <div class="sub-heading-outer">
+                                                            <p class="sub-heading">BRANDING &AMP; DESIGN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text overflow">
+                                                        <div class="inner">
+                                                            Project Nine
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="link-list overflow wow">
+                                                    <div class="link one overflow">
+                                                        <div class="inner">
+                                                            <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line hidden-xs"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 project-detail-outer">
+                                                    
+                                                <div class="project-detail">
+                                                    <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                        <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+                                                                
+                                                            <div class="overflow">
+                                                                <div class="heading-outer">
+                                                                    <h2 class="heading">Project Three</h2>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <ul class="nav list">
+                                                                    <li><p class="sub-heading">BRANDING &AMP; DESIGN</p></li>
+                                                                    <li><p class="sub-heading">MARCH 2016</p></li>
+                                                                </ul>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="pera-outer m-t-30">
+                                                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                                                    <p>Baby monitors help you hear your baby’s needs without you having to be in the room with the baby. Some baby monitors are portable, or “mobile” and are small enough that you can carry it in your pocket as you do your daily chores around the house. Depending on your price range it’s best to have a base unit that plugs into the wall. The receiving unit can be like your portable phone, you can carry it around with you, and plug it back into the base unit to be recharged.</p>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                            <div class="overflow">
+                                                                <div class="full-view-outer">
+                                                                    <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div> <!-- End: .overflow -->
+
+                                                        </div> <!-- End: END LEFT SIDE -->
+
+                                                        <!-- Right side Image -->
+                                                        <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                            <div class="row text-right display-full">
+                                                                <div class="project-detail-image-outer display-full">
+                                                                    <img src="images/comp/oke-result.png" alt="Portfolio Image">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- End: RIGHT SIDE -->
+
+                                                    </div> <!-- End: .project-detail-content -->
+
+                                                    <div class="clearfix"></div>
+                                                    
+                                                    <!-- Back Button Area -->
+                                                    <div class="overflow">
+                                                        <div class="btn-outer text-center m-t-30">
+                                                            <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End: Back Button Area -->
+
+                                                </div> <!-- End: .project-detail -->
+
+                                            </div> <!-- End: .col-xs-12 -->
+
+                                        </div> 
+
+                                    </div> <!-- End: .item -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+
+
+                                </div> <!-- End: .swiper-wrapper -->
+                            </div> <!-- End: .testimonials-container -->
+                        </div> <!-- End: .col-xs-12 -->
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .container -->
+            </div> <!-- End: .inner-container -->
+
+        </div>
+        <!--End: 3rd Section  
+            - Portfolio PAGE
+        ====================================-->
+        
+
+
+        <!--Start: 6th Section  
+            - CONTACT US PAGE
+        ====================================-->
+        <div class=" section section-item combine-section hide-overlay overflow wow" id="contact-us-section">
+            <div class="overlay-color relative bg-image-2">
+
+                <div class="inner-container contact-us" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <!-- Start: Section Heading -->
+                            <div class="section-header col-sm-10 col-sm-offset-1">
+                                <div class="overflow">
+                                    <div class="line-outer">
+                                        <div class="line wow"></div>
+                                    </div>
+                                </div>
+                                <div class="overflow">
+                                    <div class="section-heading-outer m-b-15">
+                                        <p class="sub-heading wow">CONTACT US</p>
+                                    </div> 
+                                </div>
+                                <div class="overflow">
+                                    <div class="section-heading-outer p-l-50 p-r-50">
+                                        <h2 class="section-heading wow">Let's talk about the project</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End: Section Heading -->
+
+                            <div class="clearfix"></div>
+
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 overflow">
+                                <div class="row single-form-outer wow">
+                                    
+                                    <form id="contact-form" method="post" class="dark-background single-form">
+
+                                        <div class="message col-xs-12">
+                                            <p class="email-loading"><img src="images/loading.gif" alt="">&nbsp;&nbsp;&nbsp;Sending...</p>
+                                            <p class="email-success"><i class="icon icon-icon-check-alt2"></i> Your quote has successfully been sent.</p>
+                                            <p class="email-failed"><i class="icon icon-icon-close-alt2"></i> Something went wrong!</p>
+                                        </div>
+
+                                        
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="input-outer">
+                                                <div class="group relative">
+                                                    <input name="name" class="contact-name form-control" id="contact-name" type="text"  required="">
+                                                    <label class="input-label" for="contact-name">
+                                                        <span class="label-text">YOUR NAME</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="input-outer ">
+                                                <div class="group relative">
+                                                    <input name="email" class="contact-email form-control" id="contact-email" type="email"  required="">
+                                                    <label class="input-label" for="contact-email">
+                                                        <span class="label-text">YOUR EMAIL</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12">
+                                            <div class="input-outer ">
+                                                <div class="group relative">
+                                                    <textarea name="message" class="contact-message form-control" id="contact-message" rows="3" required=""></textarea>
+                                                    <label class="input-label" for="contact-message">
+                                                        <span class="label-text">YOUR MESSAGE</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Subject Button -->
+                                        <div class="btn-form text-center col-xs-12">
+                                            <div class="button-outer relative">
+                                                <button type="submit" class="btn btn-fill right-icon">GET IN TOUCH <i class="icon icon-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div> <!-- /#testimonials-1 -->
+                            </div> <!-- End: .col-xs-12 -->
+
+                            <div class="clearfix"></div>
+
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contact-footer">
+                                <div class="row">
+                                    
+                                    <div class="about col-sm-1 m-t-15">
+
+                                        <div class="overflow">
+                                            <div class="logo-outer wow">
+                                                <a href="index.html" class="logo-link">
+                                                    <img src="images/logo.png" alt="" class="img-responsive logo">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- End: .about -->
+                                    <div class="other-link col-sm-11">
+                                        <div class="row">
+                                            
+                                            <div class="each-section col-sm-6 col-xs-12">
+                                                <div class="each-section-inner">
+                                                    
+                                                    <div class="overflow">
+                                                        <p class="title wow">Copyright © 2018 Ardy Diaz.</p>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div> <!-- End: .each-section -->
+                         
+                               
+
+                                        </div>
+                                    </div> <!-- End: .other-link -->
+
+                                </div> <!-- End: .row -->
+                            </div> <!-- End: .contact-footer -->
+
+                        </div> <!-- End: .row -->
+                    </div> <!-- End: .container -->
+                </div> <!-- End: .inner-container -->
+                
+            </div>
+
+        </div>
+        <!--End: 6th Section  
+            - CONTACT US PAGE
+        ====================================-->
 
 
 
 
         
-         
+        <!-- SCRIPTS 
+        ========================================-->
+        <script src="js/plagin-js/jquery-1.11.3.js"></script>
+        <script src="js/plagin-js/preloader.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/plagin-js/plagin.js"></script>
+
+        <!-- Custom Script 
+        ==========================================-->
+        <script src="js/custom-scripts.js"></script>
 
 
 
+    </body>
 
-    
-    </main>
-    <!--Main Layout-->
-
-
-
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/fakeLoader.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.fittext.js"></script>
-<script type="text/javascript" src="assets/js/jquery.lettering.js"></script>
-<script type="text/javascript" src="assets/js/jquery.textillate.js"></script>
-<script type="text/javascript" src="assets/js/jarallax.js"></script>
-<script type="text/javascript" src="assets/js/jarallax-video.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-</body>
 </html>
