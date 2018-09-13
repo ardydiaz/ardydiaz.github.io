@@ -32,19 +32,19 @@
 
 
   // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
+  // $('#contact-form').submit(function(e) {
+  //   e.preventDefault();
 
-      $.ajax({
-          url: "https://formspree.io/ardywerkz19@gmail.com",
-          method: "POST",
-          data: { message: $('form').serialize() },
-          dataType: "json"
-      }).done(function(response) {
-          $('#success').addClass('expand');
-          $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
-      });
-  });
+  //     $.ajax({
+  //         url: "https://formspree.io/ardywerkz19@gmail.com",
+  //         method: "POST",
+  //         data: { message: $('form').serialize() },
+  //         dataType: "json"
+  //     }).done(function(response) {
+  //         $('#success').addClass('expand');
+  //         $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
+  //     });
+  // });
 
   /**
    * =====================================
@@ -604,51 +604,51 @@
      * CONTACT FORM 2
      * ============================
     */
-    // $("#contact-form").on('submit', function(e) {
-    //   e.preventDefault();
-    //   var success = $(this).find('.email-success'),
-    //     failed = $(this).find('.email-failed'),
-    //     loader = $(this).find('.email-loading'),
-    //     postUrl = $(this).attr('action');
+    $("#contact-form").on('submit', function(e) {
+      e.preventDefault();
+      var success = $(this).find('.email-success'),
+        failed = $(this).find('.email-failed'),
+        loader = $(this).find('.email-loading'),
+        postUrl = $(this).attr('action');
 
-    //   var data = {
-    //     name: $(this).find('.contact-name').val(),
-    //     email: $(this).find('.contact-email').val(),
-    //     company: $(this).find('.contact-company').val(),
-    //     subject: $(this).find('.contact-subject').val(),
-    //     message: $(this).find('.contact-message').val()
-    //   };
+      var data = {
+        name: $(this).find('.contact-name').val(),
+        email: $(this).find('.contact-email').val(),
+        company: $(this).find('.contact-company').val(),
+        subject: $(this).find('.contact-subject').val(),
+        message: $(this).find('.contact-message').val()
+      };
 
-    //   if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
-    //     $.ajax({
-    //       type: "POST",
-    //       url: postUrl,
-    //       data: data,
-    //       beforeSend: function() {
-    //         loader.fadeIn(1000);
-    //       },
-    //       success: function(data) {
-    //         loader.fadeOut(1000);
-    //         success.delay(500).fadeIn(1000);
-    //         failed.fadeOut(500);
-    //       },
-    //       error: function(xhr) { // if error occured
-    //         loader.fadeOut(1000);
-    //         failed.delay(500).fadeIn(1000);
-    //         success.fadeOut(500);
-    //       },
-    //       complete: function() {
-    //         loader.fadeOut(1000);
-    //       }
-    //     });
-    //   } else {
-    //     loader.fadeOut(1000);
-    //     failed.delay(500).fadeIn(1000);
-    //     success.fadeOut(500);
-    //   }
+      if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
+        $.ajax({
+          type: "POST",
+           url: "https://formspree.io/ardywerkz19@gmail.com",
+          data: data,
+          beforeSend: function() {
+            loader.fadeIn(1000);
+          },
+          success: function(data) {
+            loader.fadeOut(1000);
+            success.delay(500).fadeIn(1000);
+            failed.fadeOut(500);
+          },
+          error: function(xhr) { // if error occured
+            loader.fadeOut(1000);
+            failed.delay(500).fadeIn(1000);
+            success.fadeOut(500);
+          },
+          complete: function() {
+            loader.fadeOut(1000);
+          }
+        });
+      } else {
+        loader.fadeOut(1000);
+        failed.delay(500).fadeIn(1000);
+        success.fadeOut(500);
+      }
 
-    //   return false;
-    // });
+      return false;
+    });
 
 
 
