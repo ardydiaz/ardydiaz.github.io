@@ -32,19 +32,19 @@
 
 
   // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
+  // $('#contact-form').submit(function(e) {
+  //   e.preventDefault();
 
-      $.ajax({
-          url: "https://formspree.io/ardywerkz19@gmail.com",
-          method: "POST",
-          data: { message: $('form').serialize() },
-          dataType: "json"
-      }).done(function(response) {
-          $('#success').addClass('expand');
-          $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
-      });
-  });
+  //     $.ajax({
+  //         url: "https://formspree.io/ardywerkz19@gmail.com",
+  //         method: "POST",
+  //         data: { message: $('form').serialize() },
+  //         dataType: "json"
+  //     }).done(function(response) {
+  //         $('#success').addClass('expand');
+  //         $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
+  //     });
+  // });
 
   /**
    * =====================================
@@ -622,7 +622,7 @@
       if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
         $.ajax({
           type: "POST",
-          url: postUrl,
+          url: "https://formspree.io/ardywerkz19@gmail.com",
           data: data,
           beforeSend: function() {
             loader.fadeIn(1000);
