@@ -69,7 +69,7 @@ a:focus {
  text-align: center;
 }
 #about-section p{
- padding-top: 15px;
+ /* padding-top: 15px; */
  font-weight: normal;
 }
 
@@ -221,7 +221,7 @@ h6 {
 .sub-heading {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  line-height: 40px;
+  /* line-height: 40px; */
   font-weight: 600;
   color: #f7ac54;
   text-transform: uppercase;
