@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
@@ -14,14 +14,7 @@
   })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="">
-  <title>Ardy Diaz | Website Developer</title>
+  <title>Ardy Diaz | Full-Stack Developer</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
@@ -29,7 +22,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-126939217-2');
   </script>
 
@@ -44,10 +36,10 @@
   <meta property="og:image" content="https://ardydiaz.github.io/examples/preview.png" />
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:title" content="Ardy Diaz | Fullstack Developer" />
   <meta name="twitter:description" content="Fullstack Developer" />
   <meta name="author" content="Ardy Diaz" />
-  <meta name="description" content="Fullstack Developer with a passion for backend development and artificial intelligence." />
+  <meta name="description" content="Full-Stack Developer with 8+ years of experience building web applications with Laravel, CodeIgniter, Node.js, React, Vue, WordPress and Shopify." />
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
@@ -62,1164 +54,882 @@
   <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
   <link rel="manifest" href="assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileColor" content="#0a0d14" />
   <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#0a0d14" />
   <meta name="robots" content="index, follow" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5',
+              accent: '#a855f7',
+              cyan: '#06b6d4',
+              emerald: '#10b981'
+            },
+            dark: { bg: '#0a0d14', card: '#121723' }
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-15px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0a0d14;
+      color: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: rgba(18, 23, 35, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .glass-panel-hover:hover {
+      background: rgba(26, 32, 48, 0.75);
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.2);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0a0d14; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
+    .typing-cursor::after { content: '|'; animation: blink 1s infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    section[id] { scroll-margin-top: 110px; }
+    .nav-link.active { color: #818cf8; }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-float, .animate-pulse-slow, .animate-ping { animation: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
 </head>
 
-<body>
+<body class="selection:bg-brand-500 selection:text-white relative min-h-screen">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="assets/img/me.png" class="circle img-responsive profile-pic" alt="avatar">
+  <!-- Background -->
+  <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40"></canvas>
+  <div class="fixed top-1/4 left-1/4 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+  <div class="fixed bottom-1/4 right-1/4 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 py-4 px-4 md:px-12" id="navbar">
+    <div class="max-w-7xl mx-auto flex justify-between items-center glass-panel rounded-2xl px-5 py-3">
+      <a href="#hero" class="flex items-center gap-2 font-bold text-xl tracking-tight text-white group" aria-label="Back to top">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-accent to-brand-500 flex items-center justify-center text-white font-mono text-sm shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">AD</span>
+        <span>Ardy<span class="text-brand-500">.dev</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="#about" class="nav-link hover:text-brand-500 transition-colors">About</a>
+        <a href="#experience" class="nav-link hover:text-brand-500 transition-colors">Experience</a>
+        <a href="#projects" class="nav-link hover:text-brand-500 transition-colors">Projects</a>
+        <a href="#skills" class="nav-link hover:text-brand-500 transition-colors">Skills</a>
+        <a href="#education" class="nav-link hover:text-brand-500 transition-colors">Education</a>
+        <a href="#contact" class="nav-link hover:text-brand-500 transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="resume/ardydiaz-CV.pdf" target="_blank" rel="noopener" class="px-4 py-2 text-xs font-semibold rounded-xl bg-gradient-to-r from-brand-accent to-brand-500 text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-105 transition-all flex items-center gap-1.5">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Resume
         </a>
-      </li>
+      </div>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Varad's resume in a new tab" href="https://ardydiaz.github.io/resume/ARDY-DIAZ-CV.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Ardy Diaz</a><span class="black-text">Website Developer</span>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-1" aria-label="Toggle menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </div>
-  </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+    <div id="mobile-menu" class="hidden md:hidden mt-2 glass-panel rounded-2xl p-6 flex-col gap-2 text-center">
+      <a href="#about" class="text-gray-300 hover:text-brand-500 py-2 border-b border-white/5">About</a>
+      <a href="#experience" class="text-gray-300 hover:text-brand-500 py-2 border-b border-white/5">Experience</a>
+      <a href="#projects" class="text-gray-300 hover:text-brand-500 py-2 border-b border-white/5">Projects</a>
+      <a href="#skills" class="text-gray-300 hover:text-brand-500 py-2 border-b border-white/5">Skills</a>
+      <a href="#education" class="text-gray-300 hover:text-brand-500 py-2 border-b border-white/5">Education</a>
+      <a href="#contact" class="text-gray-300 hover:text-brand-500 py-2">Contact</a>
+      <a href="resume/ARDY-DIAZ-CV.pdf" target="_blank" rel="noopener" class="mt-2 w-full py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-brand-accent to-brand-500 text-white">
+        Download Resume
+      </a>
+    </div>
+  </header>
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Varad's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
+  <main class="relative z-10 pt-28 max-w-7xl mx-auto px-4 sm:px-6 md:px-12 space-y-32">
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Ardy Diaz</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/ardydiaz" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://www.facebook.com/kuramady" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-facebook"></i>
-                </button>
-              </a>
-            </div>
-            
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
+    <!-- HERO -->
+    <section id="hero" class="min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 py-12">
+      <div class="flex-1 space-y-6 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel text-xs font-medium text-indigo-300">
+          <span class="relative flex w-2 h-2">
+            <span class="absolute inline-flex w-full h-full rounded-full bg-brand-emerald opacity-75 animate-ping"></span>
+            <span class="relative inline-flex w-2 h-2 rounded-full bg-brand-emerald"></span>
+          </span>
+          Open to New Opportunities
         </div>
-      </div>
-    </section>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none">
+          Building <br/>
+          <span class="gradient-text">Scalable Web Apps</span> &amp; Experiences
+        </h1>
 
-          </h2>
-        </blockquote> -->        
-        <p>
-         I am an Information Technology graduate from the Technological Institute of the Philippines with over 8 years of professional experience as a Full-Stack Developer. I am passionate about problem-solving, building scalable applications, and continuously improving my technical skills.
-         Throughout my career, I have developed and maintained web applications using technologies such as PHP, CodeIgniter, Laravel, Node.js, WordPress, React.js, and Vue.js. I also have strong experience working with databases including MySQL, PostgreSQL, and MongoDB, and building responsive user interfaces using HTML5, CSS, Bootstrap, Tailwind CSS, and Material UI.
-         My experience includes developing complex systems, e-commerce platforms using WordPress and Shopify, and supporting international teams, including clients in the US and China. This exposure helped me strengthen my skills in software development, collaboration, and delivering high-quality solutions.
-         I am passionate about developing applications that solve real-world problems and provide meaningful value to users. I always strive to give my best in every project and continuously learn new technologies to stay updated in the fast-evolving tech industry.
+        <p class="text-lg md:text-xl text-gray-400 font-normal max-w-xl mx-auto md:mx-0">
+          Hi, I'm <span class="text-white font-medium">Ardy Diaz</span>. A self-driven, passionate programmer with a curious mind who enjoys solving complex and challenging real-world problems.
         </p>
-        <p>
-          <ul>
-            <li><b>Languages:</b> PHP, JavaScript, HTML/CSS, Shopify, WordPress</li>
-            <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
-            <li><b>Frameworks:</b> Codeigniter, Laravel, Node Js, Vue JS, React Js, Bootstrap, Tailwind Css</li>
-            <li><b>Tools & Technologies:</b> Git, JIRA, Docker, Linux</li>
-          </ul>
-          
-        </p>
-          
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <!-- <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Website Developer, which provides professional development, interesting experiences and personal growth.
-        </p> -->
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        
-        
-      </div>
-    </section>
 
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://pinkparlour.asia/en-ph" target="_blank"><img alt="Zhiffy logo"
-                    src="assets/img/pinkparlour.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://pinkparlour.asia/en-ph" target="_blank"
-                      class="teal-text hoverline">PinkParlour</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Website Developer</div>
-            <ul>
-              <li>
-                Designing and developing custom WordPress themes from scratch to match specific design requirements.
-              </li>
-              <li>
-                Creating and maintaining documentation for codebases, custom themes, plugins, and website functionalities.
-              </li>
-              <li>Ensuring that the website functions correctly across different web browsers (e.g., Chrome, Firefox, Safari).</li>
-              <li>
-                <b>Tools:</b> Wodpress, Bootstrap, JavaScript, jQuery, HTML/HTML5, Css
-              </li>
-            </ul>
+        <!-- Typing terminal -->
+        <div class="glass-panel p-4 rounded-xl font-mono text-sm max-w-lg text-left mx-auto md:mx-0">
+          <div class="flex items-center gap-2 mb-2 border-b border-white/10 pb-2">
+            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+            <span class="text-xs text-gray-500 ml-2">developer.js</span>
           </div>
-          <div class="card-action">
-            <span>October 2015 - Febraury 2016 | Ortigas City, Philippines</span>
-          </div>
+          <p class="text-gray-300">
+            <span class="text-brand-accent">const</span> ardy = {<br/>
+            &nbsp;&nbsp;role: <span class="text-emerald-400">'Full-Stack Developer'</span>,<br/>
+            &nbsp;&nbsp;experience: <span class="text-amber-300">'8+ years'</span>,<br/>
+            &nbsp;&nbsp;focus: <span id="typing-text" class="text-brand-cyan typing-cursor"></span><br/>
+            };
+          </p>
         </div>
 
-        
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.facebook.com/mpotechph/" target="_blank"><img alt="Meditab logo"
-                    src="assets/img/mpotech.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.facebook.com/mpotechph/" target="_blank"
-                      class="teal-text hoverline">MPOTECH DIGITAL SYSTEM INC</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Website Developer</div>
-            <ul>
-              <li>
-                Optimized database queries using Query Builder for faster data retrieval, reducing load time by 30%.
-              </li>
-              <li>
-                Implemented a reusable API service class to manage multiple endpoint integrations, including error handling and token refresh logic.
-              </li>
-              <li>
-                Developed dynamic, secure web applications using CodeIgniter's MVC architecture, ensuring scalability and maintainability.
-              </li>
-              <li>Integrated Laravel Sanctum and Passport for secure user authentication in SPA and mobile applications.</li>
-              <li>Applied Test-Driven Development (TDD) to ensure robust and reliable Laravel applications.</li>
-              <li>Developed interactive, real-time features using Vue Js and React</li>
-              <li>
-                <b>Tools:</b> Codeigniter, Laravel, Javascript, Vue JS, React Js.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Febraury 2016 - March 2019 | Makati City, Philippines</span>
-          </div>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+          <a href="#projects" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-500 to-brand-accent text-white font-semibold text-sm shadow-xl shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-105 transition-all flex items-center gap-2">
+            View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact" class="px-8 py-4 rounded-xl glass-panel text-white font-semibold text-sm hover:bg-white/10 transition-all flex items-center gap-2">
+            Contact Me <i data-lucide="mail" class="w-4 h-4"></i>
+          </a>
         </div>
 
-        <!-- Experience 2 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <img alt="Zapport logo" src="assets/img/zapport.png" class="responsive-img center-block" />
-
-              </div>
-
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="#experience" class="teal-text hoverline">Zapport Services Inc</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Website Developer</div>
-            <ul>
-              <li>
-                Design and optimize relational databases using MySQL, PostgreSQL
-              </li>
-              <li>
-                Develop internal APIs to support frontend and mobile applications.
-              </li>
-              <li>Manage deployment processes, including setting up CI/CD pipelines using tools like GitLab CI, or GitHub Actions.</li>
-              <li>
-                Designed custom libraries and helpers in CodeIgniter to handle complex business logic, reducing code duplication by 50%.
-              </li>
-              <li>Implemented Laravel Livewire to create dynamic, reactive components for real-time updates without extensive JavaScript.</li>
-              <li>Created highly optimized database queries with Eloquent relationships and advanced querying techniques like joins, eager loading, and subqueries.</li>
-              <li>Set up email notification systems using Laravel’s built-in Mail and Notification features with integrations like Mailgun and SendGrid.</li>
-              <li>Integrated Bootstrap with JavaScript libraries like Select2, Chart.js, and FullCalendar for advanced UI functionality.</li>
-              <li>Designed and consumed RESTful APIs using standards like JSON:API, ensuring seamless integration with third-party services.</li>
-              <li>Integrated modern JavaScript frameworks like Vue.js and React alongside Bootstrap to enhance frontend interactivity.</li>
-              <li>Used Webpack and Vite for asset bundling and live reloading in frontend development workflows.</li>
-              <li>
-                <b>Tools:</b> Laravel, Javascript, Vue Js, React.
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>March 2020 - March 2020 | Makati City, Philippines</span>
-          </div>
-        </div>
-
-        <!-- Experience 3 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://wci.com.ph/" target="_blank"><img alt="wci logo"
-                    src="assets/img/wci.png" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://wci.com.ph/" target="_blank"
-                      class="teal-text hoverline">Woodfields Consultants, Inc. </a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Senior Website Programmer</div>
-            <ul>
-              <li>
-                Developed full-stack applications using Laravel, Vue Js, React Js, and Bootstrap, creating responsive and interactive user interfaces.
-              </li>
-              <li>
-                Developed and optimized RESTful and GraphQL APIs in Laravel, handling complex business logic and integrating third-party services.
-              </li>
-              <li>Implemented advanced API authentication and authorization mechanisms using Laravel Passport, Sanctum, and OAuth 2.0.</li>
-              <li>Streamlined database operations using advanced Eloquent ORM techniques, including dynamic relationships, query scopes, and data transformations</li>
-              <li>Integrated third-party APIs Microsoft 365 and Configured Azure Active Directory (AAD) to register applications and manage API permissions (delegated and application-level).</li>
-              <li>Built interactive and reusable UI components using React.js, ensuring consistency and maintainability across projects.</li>
-              <li>Developed single-page applications (SPAs) that communicate with Laravel APIs using Axios and Fetch.</li>
-              <li>Implemented Single Sign-On (SSO) with Microsoft Accounts using Laravel Socialite or custom OAuth flows.</li>
-              <li>Retrieved user profiles, contact details, and organization structures using the /users and /groups endpoints.</li>
-              <li>Built custom API clients using Guzzle in Laravel for secure and efficient requests.</li>
-              <li>Debugged API interactions with tools like Postman, Microsoft Graph Explorer, and Laravel Telescope.</li>
-              <li>
-                <b>Tools:</b> Laravel, Vue Js, React Js, Bootstrap
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2023(Present) | Quezon city, Philippines</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="assets/projects/pinkparlour.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Beauty Treatment Website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Experience expert beauty treatments in Singapore, Philippines, Malaysia, and Indonesia with Pink Parlour.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Wordpress, HTML, CSS, Bootstrap, MYSQL, Javascript</li>
-                  <li>Register/login to the website with email then recieve the login code</li>
-                  <li>Can book appointment with pinkparlour</li>
-                  <li>Can buy the products</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://pinkparlour.asia/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="assets/projects/jones.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Real State Website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Kelly Jones reat state based on wordpres
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Wordpress, HTML, CSS, Bootstrap, Jascript, MySQL</li>
-                  <li>Register/login to the website with email</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://www.jonesandcoproperty.com.au/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-        
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="assets/projects/clinton.png"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Real State Website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Whether you’re selling your home or an investment property
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> WordPress, HTML, CSS, Bootstrap, MySQL</li>
-                  <li>Book your free appraisal</li>
-                  <li>Admin can manage trasaction by the client.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://clintonsmiththeagency.com.au/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/qqnusa.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux, Docker</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://qqnusacemerlang.net/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/qq88asia.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://qq88asiaeth.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/qqslot777.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://qq88asiaeth.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/mpo1221.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://mpo1221pow.info/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/qq8821.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, MongoDB, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://qq8821forza.info/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/11bola.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, MongoDB, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://11bolacentury.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/ppnusa.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Intuitive navigation for a seamless betting experience on desktop and mobile.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux, Docker.</li>
-                  <li>Wager on a wide array of sportsbook, including livecasino, E-games, Lottery, and Poker</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.ppsnusamaju.info/desktop/home" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/mpoplay.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Backoffice online betting website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Backoffice is a powerful and intuitive administrative tool designed to streamline the operations of online betting platforms. 
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Laravel, NodeJs, React Js, HTML, CSS, Bootstrap, MongoDB, Linux.</li>
-                  <li>Create, edit, and monitor user accounts</li>
-                  <li>Set user permissions and manage access rights.</li>
-                  <li>Manage odds and betting markets across multiple sports and events.</li>
-                  <li>Oversee deposits, withdrawals, and transaction histories.</li>
-                  <li>Generate detailed reports on revenue, user activity, and betting trends.</li>
-                  <li>Create and manage promotional campaigns like bonuses, free bets, and cashback offers.</li>
-                </ul>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/wci-backoffice.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Backoffice Documents<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Backoffice is a powerful and intuitive administrative tool designed to streamline the operations of online betting platforms. 
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> NodeJs, React Js, HTML, CSS, Bootstrap, MySQL, Linux.</li>
-                  <li>Integrated third-party APIs Microsoft 365 and Configured Azure Active Directory (AAD) to register applications and manage API permissions (delegated and application-level).</li>
-                  <li>Implemented Single Sign-On (SSO) with Microsoft Accounts using Laravel Socialite or custom OAuth flows..</li>
-                </ul>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/xdrier-toovem.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Xdrier<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  XDRIER is an e-commerce platform that provides advanced dehumidifier solutions designed to improve indoor air quality by removing excess moisture efficiently while maintaining energy-efficient performance and modern design. 
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PHP, Wordpress, Elementor, Custom Plugin, CSS, HTML.</li>
-                  <li>Developed custom WordPress plugins to extend functionality and enhance user experience.</li>
-                  <li>Implemented responsive design principles across various devices and screen sizes.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.xdrier.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/alorairvent.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Alorairvent<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  AlorairVent is a WordPress-based e-commerce website built with Elementor that offers advanced ventilation and airflow solutions designed to improve indoor air quality, airflow balance, and energy efficiency for residential and commercial spaces.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PHP, WordPress, Elementor, WooCommerce, HTML5, CSS, JavaScript</li>
-                  <li>WooCommerce integration for secure online purchasing</li>
-                  <li>Fully responsive e-commerce website optimized for mobile and desktop</li>
-                  <li>Dynamic product pages with optimized layout and visuals</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.alorairvent.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/larcool.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Larcool<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Larcool is an e-commerce platform that offers durable and high-performance coolers designed for outdoor activities such as camping, road trips, fishing, and backyard gatherings. The website showcases a range of products including soft coolers, hard coolers, and portable cooling solutions that are built to provide reliable cold retention and rugged durability for everyday adventures.
-                  The platform focuses on delivering a seamless online shopping experience, allowing customers to easily explore products, view detailed specifications, and purchase cooling gear designed for both recreational and practical use.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PHP, MySQL, WordPress, Elementor, WooCommerce, HTML5, CSS, JavaScript</li>
-                  <li>WooCommerce integration for secure online purchasing</li>
-                  <li>Fully responsive e-commerce website optimized for mobile and desktop</li>
-                  <li>Dynamic product pages with optimized layout and visuals</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.larcool.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/argendon.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Argendon<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>Argendon is an e-commerce platform that offers commercial and residential dehumidifiers designed to control indoor moisture, improve air quality, and prevent mold growth in environments such as basements, crawl spaces, warehouses, and agricultural facilities.
-                 The platform provides a modern online shopping experience where customers can easily browse products, explore humidity control solutions, and purchase high-performance dehumidifiers built for reliable and energy-efficient operation.</p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Shopify, Liquid (Shopify templating), HTML5, CSS3, WooCommerce, JavaScript, Shopify Apps & Integrations</li>
-                  <li>Product catalog for commercial and residential dehumidifiers</li>
-                  <li>Detailed product pages with technical specifications</li>
-                  <li>Secure checkout and payment integration</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.argendon.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/alorair-toespace.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">AlorairToespace<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>AlorairToespace is an e-commerce platform that offers compact and energy-efficient toe kick heaters designed to provide discreet heating solutions for residential and commercial spaces.</p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Shopify, Liquid (Shopify templating), HTML5, CSS3, WooCommerce, JavaScript, Shopify Apps & Integrations</li>
-                  <li>Product catalog showcasing compact toe kick heaters</li>
-                  <li>Fully responsive Shopify e-commerce website</li>
-                  <li>Detailed product pages with technical specifications and features</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.alorairtoespace.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/vbs.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">AlorairVBS<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>AlorairVBS is an e-commerce platform focused on providing high-performance ventilation and air quality solutions designed for residential, commercial, and industrial environments.</p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Shopify, Liquid (Shopify templating), HTML5, CSS3, WooCommerce, JavaScript, Shopify Apps & Integrations</li>
-                  <li>Fully responsive Shopify e-commerce website</li>
-                  <li>Product catalog with ventilation and air quality equipment</li>
-                  <li>Detailed product pages with specifications and product features</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.alorairvbs.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/projects/alorair-garage.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">AlorairGarage<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>AlorairGarage is a product website focused on energy-efficient heating solutions designed specifically for garages and indoor workspaces.</p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> PHP, MySQL, WordPress, Elementor, HTML5, CSS3, JavaScript</li>
-                  <li>Fully responsive WordPress website optimized for desktop and mobile</li>
-                  <li>Detailed product specifications and product information pages</li>
-                  <li>Warranty registration and customer support forms</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://www.alorairgarage.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-  
-
-          <!-- ************* -->
+        <div class="flex items-center justify-center md:justify-start gap-6 text-gray-400 pt-6">
+          <a href="https://www.linkedin.com/in/ardydiaz/" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+          <a href="https://www.facebook.com/kuramady" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Facebook"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+          <a href="mailto:ardywerkz19@gmail.com" class="hover:text-white transition-colors" aria-label="Email"><i data-lucide="mail" class="w-6 h-6"></i></a>
         </div>
       </div>
-    </section>
 
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/node-js.png" class="responsive-img" />Node Js
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/laravel.png" class="responsive-img" />Laravel
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/codeigniter.png" class="responsive-img" />Codeigniter
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/react.png" class="responsive-img" />React JS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/vue.png" class="responsive-img" />Vue JS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/wordpress.png" class="responsive-img" />WordPress
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/bootstrap.png" class="responsive-img" />Bootstrap
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/tailwind.png" class="responsive-img" />Tailwind CSS
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/mongoDB.png" class="responsive-img" />MongoDB
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
-              </div>
+      <!-- Profile -->
+      <div class="relative flex-1 flex justify-center items-center">
+        <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl glass-panel p-4 animate-float">
+          <div class="w-full h-full rounded-2xl overflow-hidden relative group">
+            <img src="assets/img/me.png" alt="Ardy Diaz" class="w-full h-full object-cover object-top filter grayscale group-hover:grayscale-0 transition-all duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-80"></div>
+            <div class="absolute top-4 right-4 glass-panel px-3 py-1.5 rounded-lg text-xs font-mono text-emerald-400 flex items-center gap-2">
+              <i data-lucide="code" class="w-3.5 h-3.5"></i> Full-Stack
             </div>
-          </div>
-        </div>
-
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-
-
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/jira.png" class="responsive-img" />Jira
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/linux.png" class="responsive-img" />Linux
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="assets/skilss/ps.png" class="responsive-img" />Photoshop
-              </div>
+            <div class="absolute bottom-4 left-4 glass-panel px-4 py-2 rounded-xl text-left">
+              <p class="text-xs text-gray-400">Experience</p>
+              <p class="text-lg font-bold text-white">8+ Years Developer</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.asu.edu/" target="_blank" class="teal-text hoverline">Technological Institute of the Philippines</a></span>
-                </p>
-                <p class="brown-text">Manila campuse</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Science and Information Technology      
-                  <br>
-                  <b>Year Graduate: </b>2015
-                </p>
-              </div>
-            </div>
+    <!-- ABOUT -->
+    <section id="about" class="space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">About Me</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white">Problem Solver, Builder, Learner</h3>
+      </div>
 
-            
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <div class="lg:col-span-3 glass-panel p-8 rounded-2xl space-y-4 text-gray-300 text-sm md:text-base leading-relaxed">
+          <p>I am an Information Technology graduate from the <span class="text-white font-medium">Technological Institute of the Philippines</span> with over 8 years of professional experience as a Full-Stack Developer. I am passionate about problem-solving, building scalable applications, and continuously improving my technical skills.</p>
+          <p>Throughout my career, I have developed and maintained web applications using PHP, CodeIgniter, Laravel, Node.js, WordPress, React.js, and Vue.js. I also have strong experience with MySQL, PostgreSQL, and MongoDB, and building responsive user interfaces with HTML5, CSS, Bootstrap, Tailwind CSS, and Material UI.</p>
+          <p>My experience includes developing complex systems, e-commerce platforms using WordPress and Shopify, and supporting international teams, including clients in the US and China.</p>
+          <p>I always strive to give my best in every project and continuously learn new technologies to stay updated in the fast-evolving tech industry.</p>
+        </div>
+
+        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+          <div class="glass-panel glass-panel-hover p-5 rounded-2xl flex gap-4">
+            <div class="w-11 h-11 shrink-0 rounded-xl bg-brand-accent/20 flex items-center justify-center text-brand-accent"><i data-lucide="code-2" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold text-white">Languages</h4><p class="text-gray-400 text-sm">PHP, JavaScript, HTML/CSS, Shopify, WordPress</p></div>
           </div>
-         
+          <div class="glass-panel glass-panel-hover p-5 rounded-2xl flex gap-4">
+            <div class="w-11 h-11 shrink-0 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400"><i data-lucide="database" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold text-white">Databases</h4><p class="text-gray-400 text-sm">MySQL, PostgreSQL, MongoDB</p></div>
+          </div>
+          <div class="glass-panel glass-panel-hover p-5 rounded-2xl flex gap-4">
+            <div class="w-11 h-11 shrink-0 rounded-xl bg-brand-500/20 flex items-center justify-center text-indigo-400"><i data-lucide="layers" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold text-white">Frameworks</h4><p class="text-gray-400 text-sm">CodeIgniter, Laravel, Node.js, Vue.js, React.js, Bootstrap, Tailwind CSS</p></div>
+          </div>
+          <div class="glass-panel glass-panel-hover p-5 rounded-2xl flex gap-4">
+            <div class="w-11 h-11 shrink-0 rounded-xl bg-brand-cyan/20 flex items-center justify-center text-brand-cyan"><i data-lucide="wrench" class="w-5 h-5"></i></div>
+            <div><h4 class="font-bold text-white">Tools &amp; Technologies</h4><p class="text-gray-400 text-sm">Git, JIRA, Docker, Linux, Claude Code, OpenAI Codex</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Varad">(+639) 455-720-495</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com"
-              class="hoverline">ardywerkz19@gmail.com</a></a>
-        </p>
-        
-        <p>
-          <a aria-label="View Varad on LinkedIn" href="https://www.linkedin.com/in/ardydiaz/" target="_blank"
-            data-position="top" data-tooltip="View Varad on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Varad on LinkedIn" href="https://www.linkedin.com/in/ardydiaz/"
-              class="hoverline" target="_blank">linkedin.com/in/ardydiaz</a></a>
-        </p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">Career Trajectory</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white">Experience</h3>
+      </div>
+      <div id="experience-list" class="relative max-w-4xl mx-auto pl-8 md:pl-10 border-l border-white/10 space-y-10"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="space-y-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">Featured Work</h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-white mt-1">Projects</h3>
+        </div>
+        <div class="flex flex-wrap gap-1 glass-panel p-1.5 rounded-xl self-start md:self-auto" id="project-filters">
+          <button data-filter="all" class="px-4 py-2 rounded-lg text-xs font-medium transition-all bg-brand-500 text-white">All</button>
+          <button data-filter="webapp" class="px-4 py-2 rounded-lg text-xs font-medium text-gray-400 hover:text-white transition-all">Web Apps</button>
+          <button data-filter="wordpress" class="px-4 py-2 rounded-lg text-xs font-medium text-gray-400 hover:text-white transition-all">WordPress</button>
+          <button data-filter="shopify" class="px-4 py-2 rounded-lg text-xs font-medium text-gray-400 hover:text-white transition-all">Shopify</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">Technical Expertise</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white">Skills</h3>
+        <p class="text-gray-400 text-sm">The tools I use to design, build and ship.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass-panel p-6 rounded-2xl space-y-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+            <div class="p-2.5 rounded-xl bg-brand-500/20 text-indigo-400"><i data-lucide="layout-template" class="w-6 h-6"></i></div>
+            <div>
+              <h4 class="text-lg font-bold text-white">Languages, Frameworks &amp; Databases</h4>
+              <p class="text-xs text-gray-400">Backend, frontend and data</p>
+            </div>
+          </div>
+          <div id="skills-main" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3"></div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl space-y-6">
+          <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+            <div class="p-2.5 rounded-xl bg-emerald-500/20 text-emerald-400"><i data-lucide="terminal" class="w-6 h-6"></i></div>
+            <div>
+              <h4 class="text-lg font-bold text-white">Tools &amp; Other</h4>
+              <p class="text-xs text-gray-400">Workflow and design</p>
+            </div>
+          </div>
+          <div id="skills-other" class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-2 gap-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">Background</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white">Education</h3>
+      </div>
+      <div class="max-w-2xl mx-auto glass-panel glass-panel-hover p-8 rounded-2xl flex flex-col sm:flex-row gap-6 items-start">
+        <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-tr from-brand-accent/30 to-brand-500/30 flex items-center justify-center text-white">
+          <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+        </div>
+        <div class="space-y-1">
+          <span class="text-xs font-mono text-brand-cyan">Graduated 2015</span>
+          <h4 class="text-xl font-bold text-white">Technological Institute of the Philippines</h4>
+          <p class="text-sm text-indigo-300">Manila Campus</p>
+          <p class="text-sm text-gray-400 pt-2">Bachelor of Science in Information Technology</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="space-y-12">
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 md:p-12 border border-brand-500/20 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-brand-500">Let's Connect</h2>
+            <h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">Have a project in mind?</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              I'm open to full-time roles and freelance web development projects. Send a message and I'll get back to you.
+            </p>
+
+            <div class="space-y-4 pt-4">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 shrink-0 rounded-xl glass-panel flex items-center justify-center text-indigo-400"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                <div>
+                  <p class="text-xs text-gray-400">Email</p>
+                  <a href="mailto:qqardydiaz@gmail.com" class="text-sm font-semibold text-white hover:text-brand-500 transition-colors break-all">qqardydiaz@gmail.com</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 shrink-0 rounded-xl glass-panel flex items-center justify-center text-emerald-400"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                <div>
+                  <p class="text-xs text-gray-400">Phone</p>
+                  <a href="tel:+639554536468" class="text-sm font-semibold text-white hover:text-brand-500 transition-colors">(+639) 554-536-468</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 shrink-0 rounded-xl glass-panel flex items-center justify-center text-brand-accent"><i data-lucide="linkedin" class="w-5 h-5"></i></div>
+                <div>
+                  <p class="text-xs text-gray-400">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/ardydiaz/" target="_blank" rel="noopener" class="text-sm font-semibold text-white hover:text-brand-500 transition-colors">linkedin.com/in/ardydiaz</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 shrink-0 rounded-xl glass-panel flex items-center justify-center text-brand-cyan"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                <div>
+                  <p class="text-xs text-gray-400">Location</p>
+                  <p class="text-sm font-semibold text-white">Philippines</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form opens the visitor's email app with the message pre-filled -->
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1" for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="Juan Dela Cruz" class="w-full px-4 py-3 rounded-xl glass-panel text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 transition-colors text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1" for="email">Your Email</label>
+              <input type="email" id="email" required placeholder="juan@example.com" class="w-full px-4 py-3 rounded-xl glass-panel text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 transition-colors text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1" for="message">Message</label>
+              <textarea id="message" rows="5" required placeholder="Tell me about your project..." class="w-full px-4 py-3 rounded-xl glass-panel text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 transition-colors text-sm resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-accent to-brand-500 text-white font-semibold text-sm shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2">
+              Send Message <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["FullStack Developer", "Fast Learner"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+  <footer class="relative z-10 mt-24 border-t border-white/5 py-8 px-6 md:px-12 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; <span id="year"></span> Ardy Diaz. All rights reserved.</p>
+      <a href="#hero" class="hover:text-white transition-colors">Back to top &uarr;</a>
+    </div>
+  </footer>
 
+  <!-- Project modal -->
+  <div id="preview-modal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="glass-panel w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 md:p-8 relative">
+      <button id="modal-close" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 z-10" aria-label="Close">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 glass-panel px-6 py-4 rounded-xl text-emerald-400 text-sm hidden items-center gap-3 shadow-2xl">
+    <i data-lucide="check-circle" class="w-5 h-5"></i>
+    <span>Opening your email app to send the message…</span>
+  </div>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    // ---------- DATA ----------
+    const experience = [
+      {
+        company: 'Manila Central University', url: 'https://mcu.edu.ph/', logo: 'assets/img/mcu-logo-purple.png',
+        role: 'Website Developer', period: 'APRIL: 23, 2026 — Present', location: 'Caloocan City, Philippines',
+        bullets: [
+          'Developed and maintained a university chatbot system using React.js,Node.js, Express.js, MySQL, Ollama, and Qdrant vector database',
+          'Created an embeddable chatbot widget that can be deployed across different university websites with scope-based access and token validation. Integrated Ollama LLM to generate natural-language responses grounded inofficial university documents.',
+          'Designed, developed and deployed the MCU Strategy Scoreboard, a web based system for tracking the university strategic goals, KPIs and projects across departments for the Executive Committee (ExeCom).',
+          'Integrated with Microsoft 365, using Microsoft Graph to read and update a live Excel workbook on SharePoint, so the system and the Excel file stay in sync.',
+          'Deployed and maintained the system on an Ubuntu Linux production server, Nginx as a reverse proxy over HTTPS and systemd for automatic restarts. Managed Git-based deployments with deploy keys',
+          'Designed and built a full-stack kiosk feedback system end-to-end, used across multiple MCU campus locations to collect real-time satisfaction ratings via a tablet-based voting flow.'
+        ],
+        tools: ['Node.Js', 'React.Js', 'Bootstrap', 'JavaScript', 'HTML5', 'CSS', 'MySQL', 'Linux']
+      },
+      {
+        company: 'Toovem Philippines OPC.', url: 'https://www.linkedin.com/company/toovem/home/', logo: 'assets/img/toovem_philippines_logo.jpg',
+        role: 'Website Developer', period: 'MARCH: 2025 — NOVEMBER 2025', location: 'Pasay City, Philippines',
+        bullets: [
+          'Implement theme extensions, custom templates, and dynamic content based on business requirements.',
+          'Customize existing Shopify themes based on client needs (UI changes, layout adjustments, new sections, integrations).',
+          'mprove store loading speed, minimize render-blocking scripts, optimize images, and reduce unused code.',
+          'Build custom WordPress themes from scratch using PHP, HTML, CSS, JavaScript, and WordPress template hierarchy.',
+          'Customize premium themes (Elementor, Divi, Astra) to meet design or functional requirements.',
+          'Optimized WooCommerce and Shopify payment workflows to reduce cart abandonment and improve transaction success rates.',
+          'Implemented secure payment gateways and solutions in WooCommerce and Shopify, including PayPal, Stripe, and credit card processors.'
+        ],
+        tools: ['Wordpress', 'Shopify', 'PHP', 'Bootstrap', 'JavaScript', 'HTML5', 'CSS', 'MySQL']
+      },
+      {
+        company: 'Woodfields Consultants, Inc.', url: 'https://wci.com.ph/', logo: 'assets/img/wci.png',
+        role: 'Senior Website Programmer', period: 'May 2023 — March 2025', location: 'Quezon City, Philippines',
+        bullets: [
+          'Developed full-stack applications using Laravel, Vue Js, React Js, and Bootstrap, creating responsive and interactive user interfaces.',
+          'Developed and optimized RESTful and GraphQL APIs in Laravel, handling complex business logic and integrating third-party services.',
+          'Implemented advanced API authentication and authorization mechanisms using Laravel Passport, Sanctum, and OAuth 2.0.',
+          'Streamlined database operations using advanced Eloquent ORM techniques, including dynamic relationships, query scopes, and data transformations.',
+          'Integrated third-party APIs Microsoft 365 and configured Azure Active Directory (AAD) to register applications and manage API permissions (delegated and application-level).',
+          'Built interactive and reusable UI components using React.js, ensuring consistency and maintainability across projects.',
+          'Developed single-page applications (SPAs) that communicate with Laravel APIs using Axios and Fetch.',
+          'Implemented Single Sign-On (SSO) with Microsoft Accounts using Laravel Socialite or custom OAuth flows.',
+          'Retrieved user profiles, contact details, and organization structures using the /users and /groups endpoints.',
+          'Built custom API clients using Guzzle in Laravel for secure and efficient requests.',
+          'Debugged API interactions with tools like Postman, Microsoft Graph Explorer, and Laravel Telescope.'
+        ],
+        tools: ['Laravel', 'Vue Js', 'React Js', 'Bootstrap']
+      },
+      {
+        company: 'Zapport Services Inc', url: null, logo: 'assets/img/zapport.png',
+        role: 'Website Developer', period: 'March 2020 — March 2020', location: 'Makati City, Philippines',
+        bullets: [
+          'Design and optimize relational databases using MySQL, PostgreSQL.',
+          'Develop internal APIs to support frontend and mobile applications.',
+          'Manage deployment processes, including setting up CI/CD pipelines using tools like GitLab CI, or GitHub Actions.',
+          'Designed custom libraries and helpers in CodeIgniter to handle complex business logic, reducing code duplication by 50%.',
+          'Implemented Laravel Livewire to create dynamic, reactive components for real-time updates without extensive JavaScript.',
+          'Created highly optimized database queries with Eloquent relationships and advanced querying techniques like joins, eager loading, and subqueries.',
+          'Set up email notification systems using Laravel’s built-in Mail and Notification features with integrations like Mailgun and SendGrid.',
+          'Integrated Bootstrap with JavaScript libraries like Select2, Chart.js, and FullCalendar for advanced UI functionality.',
+          'Designed and consumed RESTful APIs using standards like JSON:API, ensuring seamless integration with third-party services.',
+          'Integrated modern JavaScript frameworks like Vue.js and React alongside Bootstrap to enhance frontend interactivity.',
+          'Used Webpack and Vite for asset bundling and live reloading in frontend development workflows.'
+        ],
+        tools: ['Laravel', 'JavaScript', 'Vue Js', 'React']
+      },
+      {
+        company: 'MPOTECH Digital System Inc', url: 'https://www.facebook.com/mpotechph/', logo: 'assets/img/mpotech.png',
+        role: 'Website Developer', period: 'February 2016 — March 2019', location: 'Makati City, Philippines',
+        bullets: [
+          'Optimized database queries using Query Builder for faster data retrieval, reducing load time by 30%.',
+          'Implemented a reusable API service class to manage multiple endpoint integrations, including error handling and token refresh logic.',
+          'Developed dynamic, secure web applications using CodeIgniter’s MVC architecture, ensuring scalability and maintainability.',
+          'Integrated Laravel Sanctum and Passport for secure user authentication in SPA and mobile applications.',
+          'Applied Test-Driven Development (TDD) to ensure robust and reliable Laravel applications.',
+          'Developed interactive, real-time features using Vue Js and React.'
+        ],
+        tools: ['CodeIgniter', 'Laravel', 'JavaScript', 'Vue JS', 'React Js']
+      },
+      {
+        company: 'PinkParlour', url: 'https://pinkparlour.asia/en-ph', logo: 'assets/img/pinkparlour.png',
+        role: 'Website Developer', period: 'October 2015 — February 2016', location: 'Ortigas City, Philippines',
+        bullets: [
+          'Designing and developing custom WordPress themes from scratch to match specific design requirements.',
+          'Creating and maintaining documentation for codebases, custom themes, plugins, and website functionalities.',
+          'Ensuring that the website functions correctly across different web browsers (e.g., Chrome, Firefox, Safari).'
+        ],
+        tools: ['WordPress', 'Bootstrap', 'JavaScript', 'jQuery', 'HTML5', 'CSS']
+      }
+    ];
+
+    const bettingDesc = 'Intuitive navigation for a seamless betting experience on desktop and mobile.';
+    const bettingFeat = 'Wager on a wide array of sportsbook, including live casino, E-games, Lottery, and Poker';
+    const stackA = ['Laravel', 'NodeJs', 'React Js', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'Linux', 'Docker'];
+    const stackB = ['Laravel', 'NodeJs', 'React Js', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'MongoDB', 'Linux', 'Docker'];
+    const shopifyStack = ['Shopify', 'Liquid', 'HTML5', 'CSS3', 'JavaScript', 'Shopify Apps'];
+
+    const projects = [
+      { title: 'MCU Chatbot', type: 'AI Virtual Assistant', cat: 'webapp', img: 'assets/projects/mcu-chatbot.png', url: null,
+        desc: 'Centralino Virtual Assistant is a web-based chatbot built for Manila Central University (MCU). It gives students, faculty and staff one place to ask questions about the university, such as admissions, academic policies, campus services, and how to access school systems. It is built as a RAG chatbot that answers from official university PDFs.',
+        features: ['RAG pipeline: official university PDFs are embedded with nomic-embed-text, stored in Qdrant, and answered by Qwen3 8B running on Ollama', 'Office 365 sign-in with Microsoft MSAL, plus JWT-secured API', 'Saved conversation history with a Recents list and Library', 'Quick links to MCU Official, Student Portal, Office 365, and the MCU Knowledge Base', 'API documented with Swagger'],
+        tech: ['React 19', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Microsoft MSAL', 'Node.js', 'Express', 'MySQL', 'Qdrant', 'Ollama', 'Qwen3 8B', 'nomic-embed-text', 'JWT', 'Swagger'] },
+      { title: 'MCU Knowledge Hub', type: 'AI Knowledge Base', cat: 'webapp', img: 'assets/projects/mcu-knowledge-hub.png', url: null,
+        desc: 'I built this full-stack knowledge base so university staff and students can find institutional information by asking questions in plain language instead of digging through folders. Admins upload PDF, Word and Excel files. The system pulls out the text, breaks it into chunks, embeds it and indexes it. A locally hosted LLM then answers questions using only those documents, and every answer cites its source. Each citation is a link that opens the exact PDF page, or the exact Excel sheet and cell range, the answer came from.',
+        features: [
+          'Frontend: React 18, Vite, React Router v7, Axios, Lucide React, ScrollReveal',
+          'Backend: Node.js and Express.js, organized into controllers, services, models and routes',
+          'Database: MySQL (mysql2), with Qdrant for vector search',
+          'AI: Ollama running qwen3-embedding for embeddings and a Qwen instruct model for answers',
+          'Authentication: Microsoft Entra ID (MSAL Node), JWT, bcrypt',
+          'Document parsing: pdf-parse, Mammoth, word-extractor, ExcelJS; file uploads with Multer',
+          'Security and validation: Helmet, express-rate-limit, Zod, sanitize-html, CORS',
+          'API docs with Swagger (swagger-jsdoc, swagger-ui-express)',
+          'DevOps: Docker Compose for Qdrant and Ollama, deployed on Ubuntu'
+        ],
+        tech: ['React 18', 'Vite', 'React Router v7', 'Axios', 'Node.js', 'Express.js', 'MySQL', 'Qdrant', 'Ollama', 'Qwen', 'Microsoft Entra ID', 'JWT', 'bcrypt', 'pdf-parse', 'Mammoth', 'ExcelJS', 'Multer', 'Helmet', 'Zod', 'Swagger', 'Docker Compose', 'Ubuntu'] },
+      { title: 'MCU Smiley', type: 'Kiosk Feedback & Satisfaction Tracking', cat: 'webapp', img: 'assets/projects/mcu-smiley.png', url: null,
+        desc: 'MCU Smiley is a full-stack customer satisfaction kiosk system built for Manila Central University, deployed on self-service touchscreen tablets across campus service windows (registrar, cashier, library, etc.). Visitors rate their experience via a smiley-face scale, select their user type, and optionally leave detailed feedback.',
+        features: [
+          'Frontend: React 19, React Router, Vite, ApexCharts for analytics and reporting charts, Lucide icons',
+          'Custom CSS with a responsive, glassmorphic UI optimized for tablets in landscape',
+          'Backend: Node.js and Express 5, with Zod schema validation',
+          'Authentication: JWT (jsonwebtoken) and bcrypt password hashing',
+          'API hardening with Helmet, CORS and rate limiting',
+          'Database: MySQL (mysql2) with raw SQL and transactions for concurrency-sensitive flows such as terminal reservation'
+        ],
+        tech: ['React 19', 'React Router', 'Vite', 'ApexCharts', 'Lucide', 'Node.js', 'Express 5', 'Zod', 'JWT', 'bcrypt', 'Helmet', 'CORS', 'MySQL'] },
+      { title: 'MCU Strategy Scoreboard', type: 'Strategy & Operations Dashboard', cat: 'webapp', img: 'assets/projects/mcu-scoreboard.png', url: null,
+        desc: 'The MCU Strategy Scoreboard is a web platform that turns the university’s strategy and operations reports into live, interactive dashboards. It is used by the Executive Committee (ExeCom), department heads and staff. Instead of passing large Excel files around, each team updates its own rows in SharePoint. Leaders see the status of every goal, project and operational item in one place, in real time.',
+        features: [
+          'Frontend: React, Vite, React Router, ApexCharts (react-apexcharts), Axios, SweetAlert2, custom responsive CSS',
+          'Backend: Node.js and Express 5, with express-validator, Helmet, CORS, Morgan and Winston logging',
+          'Database: MySQL with Sequelize ORM and migrations',
+          'Microsoft 365 integration: Microsoft Graph API (SharePoint and Excel workbook API), MSAL (msal-browser / msal-node), Entra ID single sign-on',
+          'Excel processing: ExcelJS in worker threads, to read workbook formatting quickly',
+          'Authentication and security: JWT (jsonwebtoken, jose), role-based and department-based access control, input validation, security headers',
+          'DevOps: Ubuntu Linux, Nginx reverse proxy with HTTPS, systemd service with automatic restarts, Git with deploy keys, nodemon for development'
+        ],
+        tech: ['React', 'Vite', 'React Router', 'ApexCharts', 'Axios', 'SweetAlert2', 'Node.js', 'Express 5', 'MySQL', 'Sequelize', 'Microsoft Graph API', 'SharePoint', 'MSAL', 'Entra ID', 'ExcelJS', 'JWT', 'Winston', 'Nginx', 'Ubuntu'] },
+      { title: 'Pink Parlour', type: 'Beauty Treatment Website', cat: 'wordpress', img: 'assets/projects/pinkparlour.png', url: 'https://pinkparlour.asia/',
+        desc: 'Experience expert beauty treatments in Singapore, Philippines, Malaysia, and Indonesia with Pink Parlour.',
+        features: ['Register/login to the website with email, then receive the login code', 'Book appointments with Pink Parlour', 'Buy products online'],
+        tech: ['WordPress', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'JavaScript'] },
+      { title: 'Jones & Co Property', type: 'Real Estate Website', cat: 'wordpress', img: 'assets/projects/jones.png', url: 'https://www.jonesandcoproperty.com.au/',
+        desc: 'Real estate website for Kelly Jones, built on WordPress.',
+        features: ['Register/login to the website with email'],
+        tech: ['WordPress', 'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'MySQL'] },
+      { title: 'Clinton Smith The Agency', type: 'Real Estate Website', cat: 'wordpress', img: 'assets/projects/clinton.png', url: 'https://clintonsmiththeagency.com.au/',
+        desc: 'Whether you’re selling your home or an investment property.',
+        features: ['Book your free appraisal', 'Admin can manage transactions by the client'],
+        tech: ['WordPress', 'HTML', 'CSS', 'Bootstrap', 'MySQL'] },
+      { title: 'QQNusa', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/qqnusa.png', url: 'https://qqnusacemerlang.net/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackA },
+      { title: 'QQ88Asia', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/qq88asia.png', url: 'https://qq88asiaeth.com/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackA },
+      { title: 'QQSlot777', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/qqslot777.png', url: 'https://qq88asiaeth.com/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackA },
+      { title: 'MPO1221', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/mpo1221.png', url: 'https://mpo1221pow.info/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackA },
+      { title: 'QQ8821', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/qq8821.png', url: 'https://qq8821forza.info/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackB },
+      { title: '11Bola', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/11bola.png', url: 'https://11bolacentury.com/',
+        desc: bettingDesc, features: [bettingFeat], tech: stackB },
+      { title: 'PPNusa', type: 'Online Betting Website', cat: 'webapp', img: 'assets/projects/ppnusa.png', url: 'https://www.ppsnusamaju.info/desktop/home',
+        desc: bettingDesc, features: [bettingFeat], tech: stackA },
+      { title: 'MPOPlay Backoffice', type: 'Admin Dashboard', cat: 'webapp', img: 'assets/projects/mpoplay.png', url: null,
+        desc: 'Backoffice is a powerful and intuitive administrative tool designed to streamline the operations of online betting platforms.',
+        features: ['Create, edit, and monitor user accounts', 'Set user permissions and manage access rights', 'Manage odds and betting markets across multiple sports and events', 'Oversee deposits, withdrawals, and transaction histories', 'Generate detailed reports on revenue, user activity, and betting trends', 'Create and manage promotional campaigns like bonuses, free bets, and cashback offers'],
+        tech: ['Laravel', 'NodeJs', 'React Js', 'HTML', 'CSS', 'Bootstrap', 'MongoDB', 'Linux'] },
+      { title: 'WCI Backoffice Documents', type: 'Document Management', cat: 'webapp', img: 'assets/projects/wci-backoffice.png', url: null,
+        desc: 'Backoffice is a powerful and intuitive administrative tool designed to streamline the operations of online betting platforms.',
+        features: ['Integrated third-party APIs Microsoft 365 and configured Azure Active Directory (AAD) to register applications and manage API permissions (delegated and application-level)', 'Implemented Single Sign-On (SSO) with Microsoft Accounts using Laravel Socialite or custom OAuth flows'],
+        tech: ['NodeJs', 'React Js', 'HTML', 'CSS', 'Bootstrap', 'MySQL', 'Linux'] },
+      { title: 'Xdrier', type: 'E-commerce', cat: 'wordpress', img: 'assets/projects/xdrier-toovem.png', url: 'https://www.xdrier.com/',
+        desc: 'XDRIER is an e-commerce platform that provides advanced dehumidifier solutions designed to improve indoor air quality by removing excess moisture efficiently while maintaining energy-efficient performance and modern design.',
+        features: ['Developed custom WordPress plugins to extend functionality and enhance user experience', 'Implemented responsive design principles across various devices and screen sizes'],
+        tech: ['PHP', 'WordPress', 'Elementor', 'Custom Plugin', 'CSS', 'HTML'] },
+      { title: 'AlorairVent', type: 'E-commerce', cat: 'wordpress', img: 'assets/projects/alorairvent.png', url: 'https://www.alorairvent.com/',
+        desc: 'AlorairVent is a WordPress-based e-commerce website built with Elementor that offers advanced ventilation and airflow solutions designed to improve indoor air quality, airflow balance, and energy efficiency for residential and commercial spaces.',
+        features: ['WooCommerce integration for secure online purchasing', 'Fully responsive e-commerce website optimized for mobile and desktop', 'Dynamic product pages with optimized layout and visuals'],
+        tech: ['PHP', 'WordPress', 'Elementor', 'WooCommerce', 'HTML5', 'CSS', 'JavaScript'] },
+      { title: 'Larcool', type: 'E-commerce', cat: 'wordpress', img: 'assets/projects/larcool.png', url: 'https://www.larcool.com/',
+        desc: 'Larcool is an e-commerce platform that offers durable and high-performance coolers designed for outdoor activities such as camping, road trips, fishing, and backyard gatherings. The platform focuses on delivering a seamless online shopping experience, allowing customers to easily explore products, view detailed specifications, and purchase cooling gear.',
+        features: ['WooCommerce integration for secure online purchasing', 'Fully responsive e-commerce website optimized for mobile and desktop', 'Dynamic product pages with optimized layout and visuals'],
+        tech: ['PHP', 'MySQL', 'WordPress', 'Elementor', 'WooCommerce', 'HTML5', 'CSS', 'JavaScript'] },
+      { title: 'Argendon', type: 'E-commerce', cat: 'shopify', img: 'assets/projects/argendon.png', url: 'https://www.argendon.com/',
+        desc: 'Argendon is an e-commerce platform that offers commercial and residential dehumidifiers designed to control indoor moisture, improve air quality, and prevent mold growth in basements, crawl spaces, warehouses, and agricultural facilities.',
+        features: ['Product catalog for commercial and residential dehumidifiers', 'Detailed product pages with technical specifications', 'Secure checkout and payment integration'],
+        tech: shopifyStack },
+      { title: 'AlorairToespace', type: 'E-commerce', cat: 'shopify', img: 'assets/projects/alorair-toespace.png', url: 'https://www.alorairtoespace.com/',
+        desc: 'AlorairToespace is an e-commerce platform that offers compact and energy-efficient toe kick heaters designed to provide discreet heating solutions for residential and commercial spaces.',
+        features: ['Product catalog showcasing compact toe kick heaters', 'Fully responsive Shopify e-commerce website', 'Detailed product pages with technical specifications and features'],
+        tech: shopifyStack },
+      { title: 'AlorairVBS', type: 'E-commerce', cat: 'shopify', img: 'assets/projects/vbs.png', url: 'https://www.alorairvbs.com/',
+        desc: 'AlorairVBS is an e-commerce platform focused on providing high-performance ventilation and air quality solutions designed for residential, commercial, and industrial environments.',
+        features: ['Fully responsive Shopify e-commerce website', 'Product catalog with ventilation and air quality equipment', 'Detailed product pages with specifications and product features'],
+        tech: shopifyStack },
+      { title: 'AlorairGarage', type: 'Product Website', cat: 'wordpress', img: 'assets/projects/alorair-garage.png', url: 'https://www.alorairgarage.com/',
+        desc: 'AlorairGarage is a product website focused on energy-efficient heating solutions designed specifically for garages and indoor workspaces.',
+        features: ['Fully responsive WordPress website optimized for desktop and mobile', 'Detailed product specifications and product information pages', 'Warranty registration and customer support forms'],
+        tech: ['PHP', 'MySQL', 'WordPress', 'Elementor', 'HTML5', 'CSS3', 'JavaScript'] }
+    ];
+
+    const skillsMain = [
+      ['Node Js', 'assets/skilss/node-js.png'], ['Laravel', 'assets/skilss/laravel.png'], ['CodeIgniter', 'assets/skilss/codeigniter.png'],
+      ['React JS', 'assets/skilss/react.png'], ['Vue JS', 'assets/skilss/vue.png'], ['WordPress', 'assets/skilss/wordpress.png'],
+      ['Bootstrap', 'assets/skilss/bootstrap.png'], ['Tailwind CSS', 'assets/skilss/tailwind.png'], ['HTML5', 'assets/img/html5-300x300.jpg'],
+      ['CSS3', 'assets/img/css3-300x300.jpg'], ['MongoDB', 'assets/skilss/mongoDB.png'], ['MySQL', 'assets/img/mysql-logo-1-300x300.jpg']
+    ];
+    const skillsOther = [
+      ['Git', 'assets/img/git.png'], ['Jira', 'assets/skilss/jira.png'], ['Linux', 'assets/skilss/linux.png'], ['Photoshop', 'assets/skilss/ps.png'],
+      ['Claude Code', 'assets/skilss/claude.svg'], ['OpenAI Codex', 'assets/skilss/codex.svg']
+    ];
+
+    const catStyle = {
+      webapp: { label: 'Web App', color: 'text-brand-cyan' },
+      wordpress: { label: 'WordPress', color: 'text-brand-accent' },
+      shopify: { label: 'Shopify', color: 'text-emerald-400' }
+    };
+    const dotColors = ['border-brand-500 bg-brand-500', 'border-brand-accent bg-brand-accent', 'border-brand-cyan bg-brand-cyan', 'border-emerald-400 bg-emerald-400'];
+    const textColors = ['text-indigo-400', 'text-brand-accent', 'text-brand-cyan', 'text-emerald-400'];
+
+    // ---------- RENDER ----------
+    const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const VISIBLE_BULLETS = 3;
+
+    document.getElementById('experience-list').innerHTML = experience.map((e, i) => {
+      const [border, bg] = dotColors[i % 4].split(' ');
+      const nameHtml = e.url
+        ? `<a href="${esc(e.url)}" target="_blank" rel="noopener" class="hover:underline">${esc(e.company)}</a>`
+        : esc(e.company);
+      const extra = e.bullets.length - VISIBLE_BULLETS;
+      return `
+        <div class="relative">
+          <div class="absolute -left-[45px] md:-left-[53px] top-1 w-6 h-6 rounded-full bg-dark-bg border-2 ${border} flex items-center justify-center">
+            <span class="w-2 h-2 rounded-full ${bg}"></span>
+          </div>
+          <div class="glass-panel glass-panel-hover rounded-2xl p-6 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+              <img src="${esc(e.logo)}" alt="${esc(e.company)} logo" class="w-14 h-14 rounded-xl object-contain bg-white p-1.5 shrink-0">
+              <div class="flex-1">
+                <span class="text-xs font-mono ${textColors[i % 4]}">${esc(e.period)}</span>
+                <h4 class="text-xl font-bold text-white">${esc(e.role)}</h4>
+                <p class="text-sm font-medium ${textColors[i % 4]}">${nameHtml}</p>
+              </div>
+              <p class="text-xs text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i>${esc(e.location)}</p>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-400 leading-relaxed">
+              ${e.bullets.map((b, j) => `<li class="flex gap-2 ${j >= VISIBLE_BULLETS ? 'extra-bullet hidden' : ''}"><i data-lucide="chevron-right" class="w-4 h-4 mt-0.5 shrink-0 text-gray-600"></i><span>${esc(b)}</span></li>`).join('')}
+            </ul>
+            ${extra > 0 ? `<button class="toggle-bullets text-xs font-medium text-indigo-400 hover:text-indigo-300" data-more="Show ${extra} more" data-less="Show less">Show ${extra} more</button>` : ''}
+            <div class="flex flex-wrap gap-2 pt-1">
+              ${e.tools.map(t => `<span class="px-2.5 py-1 rounded-md bg-white/5 text-[11px] text-gray-300">${esc(t)}</span>`).join('')}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    document.querySelectorAll('.toggle-bullets').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.glass-panel');
+        const items = card.querySelectorAll('.extra-bullet');
+        const expanding = items[0].classList.contains('hidden');
+        items.forEach(li => li.classList.toggle('hidden', !expanding));
+        btn.textContent = expanding ? btn.dataset.less : btn.dataset.more;
+      });
+    });
+
+    document.getElementById('projects-grid').innerHTML = projects.map((p, i) => {
+      const c = catStyle[p.cat];
+      return `
+        <div class="project-card glass-panel glass-panel-hover rounded-2xl overflow-hidden group flex flex-col" data-category="${p.cat}">
+          <div class="relative h-48 overflow-hidden bg-dark-card">
+            <img src="${esc(p.img)}" alt="${esc(p.title)} screenshot" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-dark-bg/60 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center gap-3">
+              <button data-project="${i}" class="open-project p-3 bg-brand-500 rounded-full text-white hover:scale-110 transition-transform" title="View details" aria-label="View details for ${esc(p.title)}">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+              </button>
+              ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" class="p-3 bg-white/20 backdrop-blur-md rounded-full text-white hover:scale-110 transition-transform" title="Visit website" aria-label="Visit ${esc(p.title)}">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
+              </a>` : ''}
+            </div>
+          </div>
+          <div class="p-6 space-y-3 flex-1 flex flex-col">
+            <div class="flex items-center justify-between text-xs font-mono ${c.color}">
+              <span>${esc(p.type)}</span>
+              <span>${c.label}</span>
+            </div>
+            <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
+              <button data-project="${i}" class="open-project text-left">${esc(p.title)}</button>
+            </h4>
+            <p class="text-gray-400 text-xs leading-relaxed line-clamp-2 flex-1">${esc(p.desc)}</p>
+            <div class="pt-2 flex flex-wrap gap-2">
+              ${p.tech.slice(0, 4).map(t => `<span class="px-2.5 py-1 rounded-md bg-white/5 text-[10px] text-gray-300">${esc(t)}</span>`).join('')}
+              ${p.tech.length > 4 ? `<span class="px-2.5 py-1 rounded-md bg-white/5 text-[10px] text-gray-500">+${p.tech.length - 4}</span>` : ''}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    const skillTile = ([name, img]) => `
+      <div class="flex flex-col items-center gap-2 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-brand-500/40 hover:bg-white/[0.06] transition-all">
+        <div class="w-12 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center">
+          <img src="${img}" alt="" loading="lazy" class="max-w-full max-h-full object-contain">
+        </div>
+        <span class="text-[11px] text-gray-300 text-center leading-tight">${name}</span>
+      </div>`;
+    document.getElementById('skills-main').innerHTML = skillsMain.map(skillTile).join('');
+    document.getElementById('skills-other').innerHTML = skillsOther.map(skillTile).join('');
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    lucide.createIcons();
+
+    // ---------- PARTICLES ----------
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let particles = [];
+    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = (Math.random() - 0.5) * 0.4;
+        this.opacity = Math.random() * 0.5 + 0.2;
+      }
+      update() {
+        this.x += this.speedX; this.y += this.speedY;
+        if (this.x > canvas.width) this.x = 0;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.y > canvas.height) this.y = 0;
+        if (this.y < 0) this.y = canvas.height;
+      }
+      draw() {
+        ctx.fillStyle = `rgba(99, 102, 241, ${this.opacity})`;
+        ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+    function initParticles() {
+      particles = Array.from({ length: Math.floor(window.innerWidth / 15) }, () => new Particle());
+    }
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      if (!reduceMotion) requestAnimationFrame(animateParticles);
+    }
+    window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+    resizeCanvas(); initParticles(); animateParticles();
+
+    // ---------- TYPING ----------
+    const phrases = ['Laravel & CodeIgniter', 'React & Vue Apps', 'WordPress & Shopify', 'RESTful APIs'];
+    const typingElem = document.getElementById('typing-text');
+    let phraseIdx = 0, charIdx = 0, isDeleting = false;
+    function typeLoop() {
+      const current = phrases[phraseIdx];
+      charIdx += isDeleting ? -1 : 1;
+      typingElem.textContent = `'${current.substring(0, charIdx)}'`;
+      let delay = isDeleting ? 50 : 100;
+      if (!isDeleting && charIdx === current.length) { delay = 2000; isDeleting = true; }
+      else if (isDeleting && charIdx === 0) { isDeleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; delay = 500; }
+      setTimeout(typeLoop, delay);
+    }
+    typeLoop();
+
+    // ---------- MOBILE MENU ----------
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function setMenu(open) {
+      mobileMenu.classList.toggle('hidden', !open);
+      mobileMenu.classList.toggle('flex', open);
+      mobileBtn.setAttribute('aria-expanded', open);
+    }
+    mobileBtn.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+    // ---------- ACTIVE NAV ----------
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => observer.observe(s));
+
+    // ---------- PROJECT FILTER ----------
+    const filterBtns = document.querySelectorAll('#project-filters button');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => { b.classList.remove('bg-brand-500', 'text-white'); b.classList.add('text-gray-400'); });
+        btn.classList.add('bg-brand-500', 'text-white');
+        btn.classList.remove('text-gray-400');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    // ---------- PROJECT MODAL ----------
+    const modal = document.getElementById('preview-modal');
+    const modalContent = document.getElementById('modal-content');
+    function openPreviewModal(i) {
+      const p = projects[i];
+      if (!p) return;
+      modalContent.innerHTML = `
+        <div class="space-y-4">
+          <img src="${esc(p.img)}" alt="${esc(p.title)} screenshot" class="w-full h-64 object-cover object-top rounded-2xl">
+          <div>
+            <span class="text-xs font-mono text-indigo-400">${esc(p.type)} &middot; ${catStyle[p.cat].label}</span>
+            <h3 class="text-2xl font-bold text-white mt-1">${esc(p.title)}</h3>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed">${esc(p.desc)}</p>
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-2">Highlights</h4>
+            <ul class="space-y-1.5 text-sm text-gray-300">
+              ${p.features.map(f => `<li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400"></i><span>${esc(f)}</span></li>`).join('')}
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2">
+            ${p.tech.map(t => `<span class="px-3 py-1 bg-white/10 text-xs rounded-lg text-white font-mono">${esc(t)}</span>`).join('')}
+          </div>
+          ${p.url ? `<div class="pt-4">
+            <a href="${esc(p.url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-2.5 bg-brand-500 text-white font-medium text-xs rounded-xl hover:bg-brand-600 transition-colors">
+              Visit Website <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>` : ''}
+        </div>`;
+      lucide.createIcons();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modal-close').focus();
+    }
+    function closePreviewModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.open-project').forEach(b => b.addEventListener('click', () => openPreviewModal(+b.dataset.project)));
+    document.getElementById('modal-close').addEventListener('click', closePreviewModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closePreviewModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePreviewModal(); });
+
+    // ---------- CONTACT FORM (mailto) ----------
+    document.getElementById('contact-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+      const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+      window.location.href = `mailto:ardywerkz19@gmail.com?subject=${subject}&body=${body}`;
+      const toast = document.getElementById('toast');
+      toast.classList.remove('hidden'); toast.classList.add('flex');
+      setTimeout(() => { toast.classList.add('hidden'); toast.classList.remove('flex'); }, 4000);
+    });
   </script>
 </body>
 
